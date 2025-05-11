@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Math Quiz</title>
+  <link rel="stylesheet" href="qvizebi.css" />
+  <link rel="stylesheet" href="quiz.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+<body>
+
+  <h1>2023 მე11 კლასი მე-5 ქვიზი</h1>
+  <!-- Mode Selection -->
+  <div id="mode-selection">
+    <p>აირჩიეთ რეჟიმი:</p>
+    <button onclick="startQuiz(false)">ჩვეულებრივი</button>
+    <button onclick="startQuiz(true)">სიმულაცია</button>
+  </div>
+
+  <!-- Timer Display -->
+  <div id="timer">დარჩენილი დრო: <span id="time">05:00</span></div>
+
+  <!-- Quiz Form -->
+  <form id="quizForm" style="display: none;">
+    <button type="submit">Submit</button>
+  </form>
+  <div id="result"></div>
+
+  <script src="quiz-5.js"></script>
+  
+</body>
+</html>

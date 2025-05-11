@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 24px; /* Increased base font size */
+  }
+  
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f0f0f0;
+  }
+  
+  .big-button {
+    font-size: 3rem; /* Increased button text size */
+    padding: 100px 150px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .big-button:hover {
+    background-color: #0056b3;
+  }
+  
